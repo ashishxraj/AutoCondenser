@@ -1,0 +1,4 @@
+openai
+pandas
+openpyxl
+tk  # Note: Tkinter comes pre-installed with most Python distributions
