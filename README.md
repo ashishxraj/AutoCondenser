@@ -5,7 +5,7 @@ AI-Powered Text Summarization for Catalogs, Reports, and Long-Form Content
 ## 🚀Features 
   - Strict Word Limits: Convert 300+ word texts → exact 40-50 word summaries.
   - Batch Processing: Handle 8,000+ Excel rows in one go
-  - Cost Tracking: ~$5 per 8,000 summaries (GPT-3.5 turbo)
+  - Cost Tracking: ~$5 per 8,000 summaries (GPT-3.5 turbo) or switch to BART Model for completely free solution.
   - Multilingual Support: Preserves Hindi/Devanagari and other non-English text
   - No Code Needed: Simple GUI for non-technical users
 
