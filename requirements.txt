@@ -2,3 +2,16 @@ openai
 pandas
 openpyxl
 tk  # Note: Tkinter comes pre-installed with most Python distributions
+
+
+# pandas
+# torch
+# tkinter
+# tqdm
+# transformers
+# sentence-transformers
+# scikit-learn
+# keybert
+# numpy
+
+# uncomment if using BART model
