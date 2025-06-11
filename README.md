@@ -17,7 +17,7 @@ AI-Powered Text Summarization for Catalogs, Reports, and Long-Form Content
   - Steps
     - 1. clone the repo:
       ```bash
-      git clone https://github.com/yourusername/AutoCondenser.git   
+      git clone https://github.com/ashishxraj/AutoCondenser.git   
     - 2 Navigate to the project directory
          ```bash
          cd AutoCondenser
