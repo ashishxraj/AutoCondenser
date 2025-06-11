@@ -1,9 +1,9 @@
-# AutoCondenser
-![GUI Screenshot](https://github.com/user-attachments/assets/33f024ef-2b8e-4b8d-9b55-6f956c007dbc)
-### Book Preface Summarizer Toolkit
+# SmartSummarizer
 
+![GUI Screenshot](https://github.com/user-attachments/assets/8ac68485-0264-4ae1-9a29-356155db5383)
 
-A collection of AI-powered tools for generating high-quality summaries of book prefaces from Excel files, using different NLP approaches.
+### Smart Summarizer Toolkit
+A collection of AI-powered tools for generating high-quality summaries of long texts from Excel files, using different NLP approaches.
 
 ## Table of Contents
 - [Features](#features)
@@ -17,7 +17,7 @@ A collection of AI-powered tools for generating high-quality summaries of book p
 ## Features
 
 ### Core Functionality
-- Processes Excel files containing book prefaces
+- Processes Excel files containing text
 - Generates concise summaries with configurable length
 - Preserves key information while reducing text length
 - Adds summaries as a new column in the output Excel file
@@ -49,8 +49,7 @@ A collection of AI-powered tools for generating high-quality summaries of book p
 ### Steps
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/book-summarizer.git
-   cd book-summarizer
+   git clone https://github.com/ashishxraj/SmartSummarizer.git
 
 2. Install dependencies:
    ```bash
@@ -85,7 +84,7 @@ A collection of AI-powered tools for generating high-quality summaries of book p
 ### Workflow
 1. Click "Browse" to select your Excel file
 
-2. Select the column containing book prefaces
+2. Select the column containing the text
 
 3. Set desired summary length (min/max words)
 
