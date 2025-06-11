@@ -11,7 +11,7 @@ import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
-class SmartBookSummarizer:
+class SmartSummarizer:
     def __init__(self):
         # INITIALIZE ALL MODELS
         self.device = 0 if torch.cuda.is_available() else -1
@@ -81,10 +81,10 @@ class SmartBookSummarizer:
             print(f"⚠️ Error processing one entry: {str(e)[:100]}...")
             return "[SUMMARY FAILED]"
 
-class BookSummarizerApp:
+class SmartSummarizerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Smart Book Preface Summarizer")
+        self.root.title("Smart Summarizer")
         self.root.geometry("550x450")
         
         # VARIABLES
@@ -99,7 +99,7 @@ class BookSummarizerApp:
     
     def create_widgets(self):
         # Title
-        tk.Label(self.root, text="Smart Book Summarizer", 
+        tk.Label(self.root, text="Smart Summarizer", 
                 font=('Arial', 14, 'bold')).pack(pady=10)
         
         # FILE UPLOAD SECTION
@@ -185,7 +185,7 @@ class BookSummarizerApp:
             self.status_label.config(text="Loading AI models... (please wait)", fg="blue")
             self.root.update()
             
-            self.summarizer = SmartBookSummarizer()
+            self.summarizer = SmartSummarizer()
             
             # READ EXCEL FILE
             df = pd.read_excel(self.file_path.get())
@@ -217,7 +217,7 @@ class BookSummarizerApp:
             if output_path:
                 df.to_excel(output_path, index=False)
                 self.status_label.config(text="Smart summarization complete!", fg="green")
-                messagebox.showinfo("Success", "Book summaries saved successfully!")
+                messagebox.showinfo("Success", "Summaries saved successfully!")
         
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred: {e}")
@@ -226,5 +226,5 @@ class BookSummarizerApp:
 # RUN THE APPLICATION
 if __name__ == "__main__":
     root = tk.Tk()
-    app = BookSummarizerApp(root)
+    app = SmartSummarizerApp(root)
     root.mainloop()

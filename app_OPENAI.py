@@ -49,10 +49,10 @@ class ChatGPTSummarizer:
                 time.sleep(2)
         return "[SUMMARY FAILED]"
 
-class BookSummarizerApp:
+class SmartSummarizerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Book Catalogue Summarizer")
+        self.root.title("Smart Summarizer")
         self.root.geometry("600x500")
         
         # Variables for file and settings
@@ -67,7 +67,7 @@ class BookSummarizerApp:
         
     def create_widgets(self):
         # Title label
-        tk.Label(self.root, text="Book Catalogue Summarizer", font=("Arial", 16, "bold")).pack(pady=10)
+        tk.Label(self.root, text="Smart Summarizer", font=("Arial", 16, "bold")).pack(pady=10)
         
         # File upload section
         tk.Label(self.root, text="1. Upload Excel File", font=("Arial", 12, "bold")).pack(anchor="w", padx=20)
@@ -153,12 +153,12 @@ class BookSummarizerApp:
             if output_path:
                 df.to_excel(output_path, index=False)
                 self.status_label.config(text="Summarization complete!", fg="green")
-                messagebox.showinfo("Success", "Book summaries saved successfully!")
+                messagebox.showinfo("Success", "Smart summaries saved successfully!")
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred: {e}")
             self.status_label.config(text="Error occurred!", fg="red")
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = BookSummarizerApp(root)
+    app = SmartSummarizerApp(root)
     root.mainloop()
